@@ -1,4 +1,4 @@
-# Vite + React + TypeScript
+# E-SUMMIT-REC
 
 This is a modern front-end project setup using Vite, React, and TypeScript. Vite provides a fast and optimized development experience, while React and TypeScript ensure robust and scalable applications.
 
