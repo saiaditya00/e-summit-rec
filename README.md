@@ -2,13 +2,6 @@
 
 This is a modern front-end project setup using Vite, React, and TypeScript. Vite provides a fast and optimized development experience, while React and TypeScript ensure robust and scalable applications.
 
-## 🚀 Features
-- ⚡ Fast build and hot module replacement (HMR) with Vite
-- 🏗️ Strongly typed components using TypeScript
-- 🎨 CSS Modules and Tailwind CSS support (optional)
-- 📂 Organized project structure
-- ✅ ESLint and Prettier for code quality
-
 ## 📦 Installation
 
 1. Clone the repository:
@@ -17,7 +10,7 @@ This is a modern front-end project setup using Vite, React, and TypeScript. Vite
    ```
 2. Navigate to the project directory:
    ```sh
-   cd your-repo
+   cd e-summit-rec
    ```
 3. Install dependencies:
    ```sh
