@@ -49,8 +49,3 @@ The application will be available at [http://localhost:5173](http://localhost:51
 └── README.md       # Project documentation
 ```
 
-## 📜 License
-This project is licensed under the [MIT License](LICENSE).
-
----
-Feel free to customize this README file to fit your project's needs! 🎉
