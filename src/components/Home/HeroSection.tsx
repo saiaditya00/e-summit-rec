@@ -1,21 +1,48 @@
-import React from 'react'
+import { useState } from "react";
+import { useNavigate /*useSearchParams*/ } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import './HeroSection.css'
 import { Cuboid } from 'lucide-react';
+import EsummitLogo from '../../assets/E-Summit-Logo.png';
+
 const Home = () => {
+  const [error, setError] = useState("");
+    const { user, signInWithGoogle } = useAuth();
+    const navigate = useNavigate();
+  
+    const handleGoogleSignIn = async () => {
+      try {
+        await signInWithGoogle();
+      } catch (error) {
+        setError(error instanceof Error ? error.message : "An error occurred");
+      }
+    };
+
+  const handleRegisterClick = () => {
+    if (!user) {
+      navigate("/?register=true");
+      handleGoogleSignIn();
+    } else {
+      navigate("/register");
+    }
+  };
   return (
+    <>
     <section className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6">
     
-    <div className="text-center">
+    <div className="text-center my-10">
+      <img src={EsummitLogo} width={200} height={200} alt="" className="m-auto" />
       <h1 className="text-2xl md:text-5xl font-bold">
-        Headline that highlights the <br /> Value Proposition
+        E-Summit'25 <br /> <span className='text-3xl' >Raghu Engineering College</span>
       </h1>
       <p className=" text-sm md:text-lg text-gray-400 mt-4 max-w-2xl">
-        Describe exactly what your product or service does and how it makes your 
-        customer’s lives better. Avoid using verbose words or phrases.
+        Join the biggest entrepreneurship summit of the year. Connect with
+        industry leaders, innovative startups, and fellow entrepreneurs in
+        this transformative event.
       </p>
       <div className="mt-6 flex gap-4 justify-center">
-        <button className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold">
-          Get started
+        <button onClick={handleRegisterClick} className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold">
+          Resgister Now
         </button>
         <button className="px-6 py-2 border border-purple-600 text-purple-400 hover:text-purple-300">
           Learn more
@@ -50,6 +77,13 @@ const Home = () => {
 
     
   </section>
+
+  {error && (
+          <div className="fixed bottom-4 right-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+            {error}
+          </div>
+        )}
+  </>
   )
 }
 

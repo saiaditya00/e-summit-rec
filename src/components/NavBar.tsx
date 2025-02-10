@@ -31,7 +31,7 @@ const NavBar = () => {
                 onClick={() => navigate("/")}
                 className="flex items-center space-x-2 cursor-pointer"
               >
-                <img src={Logo} width={140} height={100} alt="logo" />
+                <img src={Logo} width={160} height={120} alt="logo" />
               </div>
 
               {/* Desktop Navigation */}
