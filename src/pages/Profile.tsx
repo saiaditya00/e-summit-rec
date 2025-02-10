@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
+import { X as Close } from 'lucide-react';
 import { Edit } from 'lucide-react';
 
 interface Profile {
@@ -95,6 +96,8 @@ export default function Profile() {
   const handleSignOut = async () => {
     try {
       await signOut();
+      // Remove user data from local storage
+      localStorage.removeItem('user');
       navigate('/');
     } catch (error) {
       console.error('Error signing out:', error);
@@ -113,6 +116,9 @@ export default function Profile() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute right-5 top-3" onClick={() => navigate('/')}>
+          <Close className='bg-violet-500 text-white rounded-full cursor-pointer h-7 w-7' />
+        </div>
         <div className="bg-white shadow rounded-lg">
           <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
             <h2 className="text-xl font-semibold text-gray-800">Profile</h2>
