@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate /*useSearchParams*/ } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import NavBar from "../components/NavBar";
-import HeroSection from "../components/HomePage/HeroSection";
+import HeroSection from "../components/Home/HeroSection";
 
 function Home() {
   const [error, setError] = useState("");
