@@ -37,37 +37,37 @@ const NavBar = () => {
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-4">
                 <a
-                  href="#about"
+                  href="/about"
                   className="text-white hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   About
                 </a>
                 <a
-                  href="#events"
+                  href="/events"
                   className="text-white hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Events
                 </a>
                 <a
-                  href="#agenda"
+                  href="/agenda"
                   className="text-white hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Agenda
                 </a>
                 <a
-                  href="#Speakers"
+                  href="/Speakers"
                   className="text-white hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Speakers
                 </a>
                 <a
-                  href="#sponsors"
+                  href="/sponsors"
                   className="text-white hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Sponsors
                 </a>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="text-white hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
