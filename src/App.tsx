@@ -6,12 +6,14 @@ import RegistrationSuccess from './pages/RegistrationSuccess';
 
 function App() {
   return (
+    <>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/register" element={<Register />} />
       <Route path="/filled" element={<RegistrationSuccess />} />
     </Routes>
+    </>
   );
 }
 
