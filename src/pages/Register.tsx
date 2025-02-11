@@ -29,7 +29,7 @@ export default function Register() {
     full_name: '',
     institution: '',
     profession: '',
-    tshirt_size: '',
+    // tshirt_size: '',
     location: '',
     terms_accepted: false
   });
@@ -107,10 +107,10 @@ export default function Register() {
     }
 
     // T-shirt size validation
-    if (!formData.tshirt_size) {
-      errors.tshirt_size = 'Please select your T-shirt size';
-      isValid = false;
-    }
+    // if (!formData.tshirt_size) {
+    //   errors.tshirt_size = 'Please select your T-shirt size';
+    //   isValid = false;
+    // }
 
     // Location validation
     if (formData.location.trim().length < 2) {
@@ -344,7 +344,7 @@ export default function Register() {
                     )}
                   </div>
 
-                  <div>
+                  {/* <div>
                     <label className="block text-sm font-medium text-gray-700">T-shirt Size</label>
                     <select
                       required
@@ -365,7 +365,7 @@ export default function Register() {
                     {formErrors.tshirt_size && (
                       <p className="mt-1 text-sm text-red-600">{formErrors.tshirt_size}</p>
                     )}
-                  </div>
+                  </div> */}
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700">Location/Area</label>

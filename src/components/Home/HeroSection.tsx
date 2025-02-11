@@ -32,8 +32,8 @@ const Home = () => {
     
     <div className="text-center my-10">
       <img src={EsummitLogo} width={200} height={200} alt="" className="m-auto" />
-      <h1 className="text-2xl md:text-5xl font-bold">
-        E-Summit'25 <br /> <span className='text-3xl' >Raghu Engineering College</span>
+      <h1 className="text-3xl md:text-5xl font-bold text-purple-600">
+        E-Summit'25 <br /> <span className='text-xl md:text-3xl text-white' >Raghu Engineering College</span>
       </h1>
       <p className=" text-sm md:text-lg text-gray-400 mt-4 max-w-2xl">
         Join the biggest entrepreneurship summit of the year. Connect with
