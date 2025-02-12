@@ -1,2 +1,6 @@
+# files not to be committed
 .env
 node_modules/
+
+package.json
+package-lock.json

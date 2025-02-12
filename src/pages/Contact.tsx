@@ -11,7 +11,7 @@ const ContactUs: React.FC = () => {
 
       {/* Contact Us */}
       
-    <div className="bg-gray-900 text-white p-10 flex justify-center">
+    <div className="bg-gray-900 text-white p-10 flex justify-center mt-10">
       <div className="w-11/12 flex flex-wrap lg:flex-nowrap justify-between gap-10 lg:gap-24">
         <div className="w-full lg:w-1/2">
           <h5 className="text-sm text-gray-200">Hello People</h5>
